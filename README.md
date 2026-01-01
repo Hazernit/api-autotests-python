@@ -27,3 +27,17 @@ api-autotests-python/
 1. Установить зависимости:
 ```bash
 pip install -r requirements.txt
+Запустить тесты:
+
+pytest -q
+
+Примечания
+
+Проект создан как демонстрация базовых навыков API-тестирования и Python-автоматизации.
+
+
+После этого:
+```bash
+git add README.md
+git commit -m "Add README"
+git push
