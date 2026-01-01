@@ -29,3 +29,13 @@ def test_get_nonexistent_post_returns_empty_or_404():
 
     if r.status_code == 200:
         assert r.json() in ({}, [])
+
+
+def test_get_users_returns_200_and_list():
+    r = requests.get(f"{BASE_URL}/users")
+    assert r.status_code == 200
+
+    data = r.json()
+    assert isinstance(data, list)
+    assert len(data) > 0
+
