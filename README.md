@@ -16,3 +16,14 @@
 - негативный сценарий для несуществующего ресурса
 
 ## Структура проекта
+api-autotests-python/
+├── tests/
+│ └── test_basic.py
+├── requirements.txt
+└── README.md
+
+
+## Как запустить
+1. Установить зависимости:
+```bash
+pip install -r requirements.txt
